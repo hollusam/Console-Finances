@@ -131,4 +131,20 @@ console.log('==============================');
 
  console.log('Average Change: $' + average.toFixed(2)); //gives the output to 2 decimal places
 
+ //Getting the max value in the change array
+ var maxVal = Math.max(...change);
+
+ //position of the maxval
+ var position = change.indexOf(maxVal); position++; //adds 1 to the index position
+
+ console.log('Greatest Increase in Profits: ' + finances[position][0] + ' ($' + maxVal + ')');
+
+ //Getting the min value in the change array
+ var minVal = Math.min(...change);
+
+ //position of the maxval
+ var position = change.indexOf(minVal); position++; //adds 1 to the index position
+
+ console.log('Greatest Decrease in Profits: ' + finances[position][0] + ' ($' + minVal + ')');
+
 
