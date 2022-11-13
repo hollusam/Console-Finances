@@ -86,3 +86,23 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+//Prints the heading
+console.log('Financial Analysis');
+console.log('==============================');
+
+//Prints the total number of months included in the dataset.
+ var totalMonths = finances.length;
+
+ console.log('Total Months: ' + totalMonths);
+
+ //Printing the total amount of Profit/Losses over the entire period
+ var sumTotal = 0;
+
+ for (var i = 0; i < totalMonths; i++) {
+     
+    //adding the profits/losses column
+    sumTotal += finances[i][1];
+ }
+ console.log('Total: $' + sumTotal);
+
