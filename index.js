@@ -106,3 +106,29 @@ console.log('==============================');
  }
  console.log('Total: $' + sumTotal);
 
+ // Getting the average of the changes in profit/losses over the entire period
+ var dataChange = 0;
+ var average = 0;
+ var sumChange = 0;
+ var change = [];
+
+ for (var i = 0; i < totalMonths; i++) {
+    for (var j = i + 1; j < totalMonths; j++) {
+        dataChange = finances[j][1] - finances[i][1];
+        //adding values to change array
+        change.push(dataChange);
+        i++;
+    }
+ }
+
+//Gets the total sum of change array
+ for (var k = 0; k < change.length; k++) {
+    sumChange += change[k];
+ }
+
+ //Getting the average of the changes and printing to the console
+ average = (finances[0][1] + sumChange) / totalMonths;
+
+ console.log('Average Change: $' + average.toFixed(2)); //gives the output to 2 decimal places
+
+
