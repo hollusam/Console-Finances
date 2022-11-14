@@ -20,7 +20,7 @@ This code can be used by any company who is looking to analyse their company fin
 
 Samuel: https://instagram.com/hollusam
 
-Project link: https://hollusam.github.io/Bootstrap-Portfolio/
+Project link: https://github.com/hollusam/Console-Finances
 
 ## Acknowledgement
 
